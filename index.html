@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- font awesome icons-->
+    <script src="https://kit.fontawesome.com/ccd306c63a.js" crossorigin="anonymous"></script>
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- css styling link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- container declaration -->
+    <div class="container">
+        <div class="data-input">
+            <input type="text" id="city" placeholder="Enter the location">
+            <input type="submit" value="Get Temperature" onclick="getWeatherData()">
+        </div>
+        <div class="data-view">
+            <div class="imgbox">
+                <img src="" alt="" id="icon">  
+            </div>          
+            <div id="temp"></div>
+            <div id="weather"></div>
+            <div id="msg"></div>
+            <div class="data-details">
+                <div class="col">
+                    <div class="icon"><i class="fas fa-water"></i></div>
+                    <div class="humidity"></div>
+                </div>
+                <div class="col">
+                    <div class="icon"><i class="fas fa-temperature-up"></i></div>
+                    <div class="tempmax"></div>
+                </div>
+                <div class="col">
+                    <div class="icon"><i class="fas fa-temperature-down"></i></div>
+                    <div class="tempmin"></div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- js file link -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

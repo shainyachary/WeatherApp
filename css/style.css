@@ -1,0 +1,129 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 400px;
+    margin: 2em;
+    position: relative;
+}
+.data-input{
+    min-width: 300px;
+    display: flex;
+    position: relative;
+    gap: 1em;
+}
+.data-input input{
+    width: 100%;
+    padding: 0.5em 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5),
+    inset -5px 5px 10px rgba(255,255,255,0.4),
+    inset 5px -5px 10px rgba(255,255,255,0.4) ;
+    position: relative;
+}
+.data-input input[type="text"]{
+    color: #333;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.data-input input[type="submit"]{
+    background: #20569c;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.data-input input[type="submit"]:hover{
+    letter-spacing: 2px;
+}
+.data-view{
+    position: relative;
+    background-color:#5368ab;
+    margin-top: 2em;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    border-radius: 15px;
+    padding: 1.5em 1%;
+}
+.data-view #temp{
+    font-size: 3em;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.data-view .imgbox{
+    max-width: 150px;
+    height: 150px;
+    display: block;
+    position: relative;
+    transition: 0.2s;
+}
+.data-view .imgbox img{
+    width: 100%;
+    position: relative;
+    top: -5%;
+    left: 65%;
+}
+.data-view .imgbox img:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.data-view #weather{
+    font-size: 2em;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.data-view #msg{
+    font-family: 'Chakra Petch', sans-serif;
+    margin-bottom: 1em;
+}
+.data-details{
+    display: flex;
+    min-width: 250px;
+    justify-content: space-around;
+    margin: 0.8em 0;
+}
+.data-details .col{
+    display: flex;
+    gap: 5px;
+    flex-basis: auto;
+}
+.data-details .col div{
+    font-size: 1.2em;
+    font-family: 'Chakra Petch', sans-serif;
+    transition: 0.3s;
+}
+.data-details .col div:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+/* code for responsiveness */
+@media screen and (max-width:440px)
+{
+    body{
+        margin-top: -3em;
+    }
+    .data-input{
+        flex-direction: column;
+        max-width: 200px;
+        margin: auto;
+    }
+    .data-view #temp{
+        font-size: 2.4em;
+    }
+}
